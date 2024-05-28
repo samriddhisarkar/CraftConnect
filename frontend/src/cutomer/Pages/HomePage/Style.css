@@ -1,0 +1,216 @@
+.navbar {
+    background-color: rgba(2, 2, 2, 0.312);
+    backdrop-filter: blur(0.05px);
+}
+
+
+.form1-container {
+    background-image: url('https://img.freepik.com/free-photo/tailoring-tools-elements-arrangement-with-copy-space_23-2148707987.jpg?w=996&t=st=1716202264~exp=1716202864~hmac=e8e1fb5738707352f3c3ce63c10d0a394bee32a820f7a1989431fd13d1dd7c44');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.form1-heading {
+    color: #f1d8d8;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Georgia';
+}
+
+.form1-content {
+    background-color: rgba(0, 0, 0, 0.675);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: 'Georgia';
+    
+}
+.categories-section {
+    text-align: center;
+    margin-top: 20px; 
+    margin-bottom: 20px; /* Add margin at the bottom */
+    
+    border: dotted;
+    border-width: 10px 4px;
+    border-radius: 10px 40px;
+    margin-bottom: 100px; 
+
+    --s: 55px; /* control the size */
+    --b: 15px;
+     /* control the thickness of the curved lines */
+    --_r: calc(1.28*var(--s) + var(--b)/2) at top 50%;
+    --_f: calc(99.5% - var(--b)),#F9F2E7 calc(101% - var(--b)) 99.5%,#32292900 101%;
+    --_g0: calc(-.8*var(--s)), #dff0c7 var(--_f);
+    --_g1: calc(-.8*var(--s)), #f1edca var(--_f);
+    --_s: calc(1.8*var(--s) + var(--b));
+    background: 
+      radial-gradient(var(--_r) right var(--_g0)) calc(-1*var(--_s)) var(--s),
+      radial-gradient(var(--_r) left var(--_g1)) var(--_s) calc(-1*var(--s)),
+      radial-gradient(var(--_r) right var(--_g1)) calc(var(--_s)/-2) calc(-1*var(--s)),
+      radial-gradient(var(--_r) left var(--_g0)) calc(var(--_s)/ 2) var(--s),
+      linear-gradient(90deg,#dff0c7 50%,#f1edca 0);
+    background-size: var(--_s) calc(4*var(--s));
+    padding: 50px; /* Add padding to the categories section */
+}
+
+.heading {
+    color: #076420; /* Change color as needed */
+    font-family: 'Comic Sans MS', cursive; /* Change font family as needed */
+    font-size: 48px; /* Change font size as needed */
+    font-weight: bold; /* Change font weight as needed */
+    text-align: center;
+    margin-top: 20px; /* Add margin bottom to create gap */
+    margin-bottom: 20px; /* Add margin bottom to create gap */
+}
+
+ .card1 {
+    width: 400px; 
+    height: 400px;
+    margin-bottom: 20px;
+    background-color: hsla(0, 0%, 100%, 0.125); 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    font-family: 'Comic Sans MS', cursive;
+} 
+
+.card1-body {
+    height: 200px; 
+    overflow: hidden; 
+}
+
+.card1-image-top {
+    height: 250px; 
+    object-fit: cover; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+} 
+/* 
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button-container a.btn {
+    width: 100%; /* Set button width to 100% of its container */
+    /* max-width: 150px; /* Set maximum button width if needed */
+    /* background-color: #8c264fac;
+    color: #ffffff;
+
+.button-container a.btn :hover {
+    background-color: hsla(342, 51%, 45%, 0.875);
+} */
+
+/* Styling for the form container */
+.form-container {
+    background-image: url('https://assets.entrepreneur.com/content/3x2/2000/1673019342-GettyImages-1334389755.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    text-align: center;
+    
+}
+
+/* Styling for the form content */
+.form-content {
+    background-color: rgba(203, 154, 154, 0.419);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: 'Arial';
+    color: #742727;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* Styling for the form heading */
+.form-heading {
+    color: #6e2e0b;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Arial';
+}
+
+/* Styling for the form inputs */
+
+.form{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border: 1px solid #742727;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Georgia';
+    background-color: rgba(255, 248, 221, 0.726);
+}
+.form::after{
+    color: #8f3333;
+}
+
+/* Styling for the button */
+/* button {
+    background-color: #8c264fac;
+    color: #e9baba;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: hsla(342, 51%, 45%, 0.875);
+}
+
+button.carousel-control-prev:hover{
+    background-color: hsla(0, 0%, 100%, 0);
+}
+
+button.carousel-control-next:hover{
+    background-color: hsla(0, 0%, 100%, 0);
+} */
+
+/* body {
+    background-color: #f8f9fa;
+} */
+.thank-you-container {
+    background-image: url('https://img.freepik.com/free-vector/flat-world-humanitarian-day-background_23-2149456286.jpg?t=st=1716286947~exp=1716290547~hmac=7cb737495d67f1d540b8d0ea6d6649c8780daeda371863891fdef2bea69007b4&w=996');
+    background-size: contain;
+    background-position: center;
+    background-color: rgb(36, 152, 198);
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding: 50px 0;
+    text-align: center;
+    height: 100vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Comic Sans MS', cursive;
+    justify-content: center;
+    align-items: center;
+
+}
+.thank-you-icon {
+    font-size: 4rem;
+    color: #28a745;
+}
+

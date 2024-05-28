@@ -1,0 +1,402 @@
+/* In your CSS file or <style> tags */
+/* @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
+
+h1 {
+  font-family: 'Cabin Sketch', cursive;
+  font-weight: semi-bold;
+  color: #d1a02d;
+  font-size: 80px;
+} */
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/* html, body{
+  height: 100%;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+} */
+
+body{
+   /* background: #ede4ba;  */
+  font-family: Arial;
+  
+  
+}
+
+/* .container {
+  display: flex;
+/*   border:1px solid red; */
+  /* height: 100%;
+  align-items: center;
+  margin-bottom: 50px;
+  
+} */ 
+
+
+.container1 {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;/* Use viewport height for full height */
+  width: 90%;
+  height: 250px;
+  margin: 0 auto; /* shorthand for margin-left: auto; margin-right: auto; */
+  font-size: 20px;
+  padding: 20px; /* adjust padding as needed */
+  /* Set desired background color */
+  text-align: center; /* Align text content center */
+  border: dotted;
+  border-width: 10px 4px;
+  border-radius: 10px 40px;
+  margin-bottom: 100px; 
+
+    --s: 55px; /* control the size */
+    --b: 15px;
+     /* control the thickness of the curved lines */
+     
+    
+    --_r: calc(1.28*var(--s) + var(--b)/2) at top 50%;
+    --_f: calc(99.5% - var(--b)),#F9F2E7 calc(101% - var(--b)) 99.5%,#32292900 101%;
+    --_g0: calc(-.8*var(--s)), #dff0c7 var(--_f);
+    --_g1: calc(-.8*var(--s)), #f1edca  var(--_f);
+    --_s: calc(1.8*var(--s) + var(--b));
+    background: 
+      radial-gradient(var(--_r) right var(--_g0)) calc(-1*var(--_s)) var(--s),
+      radial-gradient(var(--_r) left  var(--_g1))         var(--_s)  calc(-1*var(--s)),
+      radial-gradient(var(--_r) right var(--_g1)) calc(var(--_s)/-2) calc(-1*var(--s)),
+      radial-gradient(var(--_r) left  var(--_g0)) calc(var(--_s)/ 2) var(--s),
+      linear-gradient(90deg,#dff0c7 50%,#f1edca 0);
+    background-size: var(--_s) calc(4*var(--s));
+    
+
+  
+}
+/* html
+{
+	padding: 0 1em;
+	font-family: Calibri, sans-serif;
+}
+
+.cd__main{
+    max-width: 720px !important;
+}
+
+img
+{
+	       max-width: 220px;
+               height: auto;
+} */
+
+.image-left, .image-right
+{
+	margin: 1em 0;
+}
+
+@media (min-width: 20em)
+{
+	.image-left, .image-right
+	{
+		display: flex;
+		align-items: center;
+	}
+
+	.image-left img
+	{
+    width:40%;
+    height: 400px;
+		margin-right: 1em;
+		float: left; /* fallback */
+	}
+
+	.image-right img
+	{
+    width:40%;
+    height: 400px;
+		order: 1;
+		margin-left: 1em;
+		float: right; /* fallback */
+	}
+	
+	/* clearfix for fallback */
+	.image-left::after,
+	.image-right::after
+	{
+		content: "";
+  	display: block;
+		clear: both;
+	}
+}
+
+@media (min-width: 30em)
+{
+	.image-left img, .image-right img
+	{
+		flex-shrink: 0;
+	}
+}
+.svg1{
+  display: block;
+  font: 7em 'Montserrat';
+  width: 800px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+svg {
+    display: block;
+    font: 7em 'Montserrat';
+    width: 800px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: rgb(227, 170, 127);
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+  stroke: #4D163D;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+  stroke: #840037;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+  stroke: #BD0034;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+  stroke: #BD0034;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+  stroke: #FDB731;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
+}
+/* .nav-link::after{
+  content:"" !important;
+  width: 130% !important;
+  height: 120% !important;
+  background-color: #FDB731 !important;
+  position: absolute !important;
+  top:50% !important;
+  left: 50% !important;
+  transform: translate(-50%,-50%) scaleY(1) !important;
+  z-index: -1 !important;
+  transform: transform 0.3s ease-in-out !important;
+}
+.nav-link:hover::after{
+  transform: translate(-50%,-50%) scaleY(1) ;
+} */
+.nav-link:hover{
+  color :#BD0034 !important;
+}
+.village{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4e3c4;
+  font-size: 100px;
+  color: #4d163d;
+  font-weight: 700;
+  border: dashed;
+  border-width: 2px 4px;
+  border-radius: 40px;
+  margin-bottom: 100px;
+  
+    --r: 56px; /* control the size */
+    --c1: #f7eaea /*color 1*/ 99%,#0000 101%;
+    --c2: #fce6d6 /*color 2*/ 99%,#0000 101%;
+    
+    --s:calc(var(--r)*.866);  /* .866 = cos(30deg) */
+    --g0:radial-gradient(var(--r),var(--c1));
+    --g1:radial-gradient(var(--r),var(--c2));
+    --f:radial-gradient(var(--r) at calc(100% + var(--s)) 50%,var(--c1));
+    --p:radial-gradient(var(--r) at 100% 50%,var(--c2));
+    background:
+      var(--f) 0 calc(-5*var(--r)/2),
+      var(--f) calc(-2*var(--s)) calc(var(--r)/2),
+      var(--p) 0 calc(-2*var(--r)),
+      var(--g0) var(--s) calc(-5*var(--r)/2),
+      var(--g1) var(--s) calc( 5*var(--r)/2),
+      radial-gradient(var(--r) at 100% 100%,var(--c1)) 0 calc(-1*var(--r)),   
+      radial-gradient(var(--r) at 0%   50% ,var(--c1)) 0 calc(-4*var(--r)),
+      var(--g1) calc(-1*var(--s)) calc(-7*var(--r)/2),
+      var(--g0) calc(-1*var(--s)) calc(-5*var(--r)/2),
+      var(--p) calc(-2*var(--s)) var(--r),
+      var(--g0) calc(-1*var(--s)) calc(var(--r)/ 2),
+      var(--g1) calc(-1*var(--s)) calc(var(--r)/-2),
+      var(--g0) 0 calc(-1*var(--r)),
+      var(--g1) var(--s) calc(var(--r)/-2),
+      var(--g0) var(--s) calc(var(--r)/ 2) 
+      #fce6d6; /*color 2 again here */
+    background-size: calc(4*var(--s)) calc(6*var(--r));
+  }
+  
+/* 
+.card{
+
+	width: 350px;
+	border: none;
+	box-shadow: 5px 6px 6px 2px #e9ecef;
+	border-radius: 12px;
+} */
+
+.circle-image img{
+
+	border: 6px solid #fff;
+    border-radius: 100%;
+    padding: 0px;
+    top: -28px;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    z-index: 1;
+    background: #e7d184;
+    cursor: pointer;
+
+}
+
+
+.dot {
+      height: 18px;
+    width: 18px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 3px solid #fff;
+    top: -48px;
+    left: 186px;
+    z-index: 1000;
+}
+
+.name{
+	margin-top: -21px;
+	font-size: 18px;
+}
+
+
+.fw-500{
+	font-weight: 500 !important;
+}
+
+
+.start{
+
+	color: green;
+}
+
+.stop{
+	color: red;
+}
+
+
+.rate{
+
+	border-bottom-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+
+}
+
+
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center
+}
+
+.rating>input {
+    display: none
+}
+
+.rating>label {
+    position: relative;
+    width: 1em;
+    font-size: 30px;
+    font-weight: 300;
+    color: #FFD600;
+    cursor: pointer
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
+}
+
+
+.buttons{
+	top: 36px;
+    position: relative;
+}
+
+
+.rating-submit{
+	border-radius: 15px;
+	color: #fff;
+	    height: 49px;
+}
+
+
+.rating-submit:hover{
+	
+	color: #fff;
+}
+
+.carousel-inner {
+   display: flex;
+  flex-wrap: nowrap; 
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.carousel-item {
+  scroll-snap-align: center;
+  transition: transform 0.05s ease-in-out;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+@keyframes carousel-slide {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-0.1%); }
+}
+
+.carousel-inner {
+  animation: carousel-slide 5s infinite; /* Adjust the timing as needed */
+}
+

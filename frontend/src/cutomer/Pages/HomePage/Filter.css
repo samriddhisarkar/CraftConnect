@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap');
+
+.filter-button {
+  width: 30%; /* Adjusts width based on content */
+  padding: 8px 16px; /* Padding around text */
+  background-color: #e0ae52; 
+  color: white;
+  margin-bottom: 10px; /* Space between buttons */
+  border: none;
+  margin-left: 100px;
+  border-radius: 8px; /* Rounded edges */
+  font-family: 'Crafty Girls', cursive; /* Use crafty font */
+  font-weight: bold; /* Make font bold */
+  display: block; /* Make buttons block-level elements */
+}
+
+.filter-button:last-child {
+  margin-bottom: 0; /* No space after the last button */
+}
